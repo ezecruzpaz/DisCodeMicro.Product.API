@@ -11,7 +11,7 @@ on:
 
 env:
   VERSION_DOTNET: '9.0.x'
-  PROYECTO: 'DisCodeMicro.Product.API.csproj' # Ajustado a raíz
+  PROYECTO: 'DsiCode.Micro.Product.API.csproj' # Ajustado a raíz
 
 jobs:
   build:
