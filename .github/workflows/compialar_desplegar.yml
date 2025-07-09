@@ -48,10 +48,12 @@ jobs:
         run: dotnet restore ${{ env.PROYECTO }}
 
       - name: Build
-        run: dotnet build ${{ env.PROYECTO }} --no-restore --configuration Release
+        run: dotnet build DsiCode.Micro.Product.API.csproj --no-restore --configuration Release
 
       - name: Test
-        run: dotnet test ${{ env.PROYECTO }} --no-build --configuration Release
+        run: dotnet test DsiCode.Micro.Product.API.csproj --no-build --configuration Release
 
       - name: Publish
-        run: dotnet publish ${{ env.PROYECTO }} --no-build --configuration Release --output ./publish
+        run: dotnet publish DsiCode.Micro.Product.API.csproj --no-build --configuration Release --output ./publish
+
+        
